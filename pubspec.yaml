@@ -1,0 +1,54 @@
+name: calcrate
+description: "A professional currency converter and calculator application."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  
+  # State Management & DI
+  provider: ^6.1.1
+  
+  # Local Caching for Offline Mode
+  shared_preferences: ^2.2.2
+  
+  # REST API Calling
+  http: ^1.2.0
+  
+  # Share and QR Functionality
+  qr_flutter: ^4.1.0
+
+  # Audio Player for Click Sound
+  audioplayers: ^6.0.0
+
+  # Web Link Opener
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  # ইমেজ এবং অডিও ফাইলের অ্যাসেট পাথ রেজিস্টার করা হলো
+  assets:
+    - assets/image/icon/
+    - assets/audio/
+
+# অ্যাপ আইকন অটো-জেনারেট করার কনফিগারেশন
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/image/icon/logo.png"
+  remove_alpha_ios: true
